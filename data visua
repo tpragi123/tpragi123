@@ -1,0 +1,50 @@
+# Import necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load the dataset (Replace 'data.csv' with your actual dataset path)
+df = pd.read_csv('data.csv')
+
+# Display the first few rows of the dataset
+print("First 5 rows of the dataset:")
+print(df.head())
+
+# Basic statistics (mean, median, standard deviation)
+print("\nBasic Statistics:")
+print(df.describe())
+
+# Check for missing values
+print("\nMissing Values:")
+print(df.isnull().sum())
+
+# Fill missing values (Optional)
+df.fillna(df.mean(), inplace=True)
+
+# Correlation matrix
+print("\nCorrelation Matrix:")
+print(df.corr())
+
+# Visualize data (histogram of a specific column)
+column_to_plot = 'column_name'  # Replace with actual column name
+plt.hist(df[column_to_plot], bins=30, edgecolor='black')
+plt.title(f'Histogram of {column_to_plot}')
+plt.xlabel(column_to_plot)
+plt.ylabel('Frequency')
+plt.show()
+
+# Scatter plot between two variables (replace column1 and column2 with actual column names)
+plt.scatter(df['column1'], df['column2'])
+plt.title('Scatter plot between column1 and column2')
+plt.xlabel('column1')
+plt.ylabel('column2')
+plt.show()
+
+# Grouping and aggregating data
+grouped = df.groupby('category_column')['numerical_column'].mean()  # Replace with actual columns
+print("\nGrouped Data (Mean of numerical_column by category_column):")
+print(grouped)
+
+# Save the cleaned dataset to a new CSV file
+df.to_csv('cleaned_data.csv', index=False)
+print("\nCleaned dataset saved as 'cleaned_data.csv'.")
