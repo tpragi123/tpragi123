@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @tpragi123
 - 👀 I’m interested in : creating visualizations
 - 💞️ I’m looking to collaborate on: data analytics
-- 📫 How to reach me : tpragi@gmail.com
+- 📫 How to reach me : tpragi1234@gmail.com
   
 
 <!---
