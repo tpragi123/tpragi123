@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @tpragi123
+- 👋 Hi, I’m @tpragi
 - 👀 I’m interested in : creating visualizations
 - 💞️ I’m looking to collaborate on: data analytics
 - 📫 How to reach me : tpragi1234@gmail.com
